@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Whisk",
+    "breed": "Frajola",
+    "photo": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+    "age": "1 ano e 5 meses"
+  },
+  {
+    "name": "Simba",
+    "breed": "Malhado",
+    "photo": "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+    "age": "2 anos e 7 meses"
+  },
+  {
+    "name": "Felix",
+    "breed": "Maine",
+    "photo": "https://images.unsplash.com/photo-1491485880348-85d48a9e5312?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+    "age": "3 anos"
+  },
+  {
+    "name": "Luna<",
+    "breed": "Malhado",
+    "photo": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+    "age": "2 anos e 1 mês"
+  },
+  {
+    "name": "Bella",
+    "breed": "Angorá",
+    "photo": "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+    "age": "1 ano"
+  },
+  {
+    "name": "Tiger",
+    "breed": "Napoleon",
+    "photo": "https://images.unsplash.com/photo-1591871937573-74dbba515c4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+    "age": "2 meses"
+  }
+]

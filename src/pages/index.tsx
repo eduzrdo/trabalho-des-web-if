@@ -1,9 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
+import { Cat, Dog } from "phosphor-react";
 
 import { PetCard } from "@/components/PetCard";
-import { Cat, Dog } from "phosphor-react";
+import { Button } from "@/components/Button";
+
+import petsNearby from "../database/petsNearby.json";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -63,12 +66,9 @@ export default function Home() {
             </p>
 
             <div className="flex gap-4 mt-8 w-full">
-              <button className="min-w-[150px] flex justify-center items-center gap-2 p-4 rounded-lg text-white bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500">
-                Quero adotar <i className="ph-dog-fill text-lg"></i>
-              </button>
-              {/* <button className="min-w-[150px] flex justify-center items-center gap-2 p-4 rounded-lg text-white bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500">
-                Quero doar <i className="ph-paw-print-fill text-lg"></i>
-              </button> */}
+              <Button>
+                Quero adotar <Dog className="text-lg" weight="fill" />
+              </Button>
             </div>
           </div>
 
@@ -108,47 +108,14 @@ export default function Home() {
         </ul>
 
         <div className="grid grid-cols-3 gap-8 mt-8">
-          <PetCard
-            name="Whisk"
-            breed="Frajola"
-            photo="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
-            age="1 ano e 5 meses"
-          />
-
-          <PetCard
-            name="Simba"
-            breed="Malhado"
-            photo="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
-            age="2 anos e 7 meses"
-          />
-
-          <PetCard
-            name="Felix"
-            breed="Maine"
-            photo="https://images.unsplash.com/photo-1491485880348-85d48a9e5312?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
-            age="3 anos"
-          />
-
-          <PetCard
-            name="Luna<"
-            breed="Malhado"
-            photo="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
-            age="2 anos e 1 mês"
-          />
-
-          <PetCard
-            name="Bella"
-            breed="Angorá"
-            photo="https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
-            age="1 ano"
-          />
-
-          <PetCard
-            name="Tiger"
-            breed="Napoleon"
-            photo="https://images.unsplash.com/photo-1591871937573-74dbba515c4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
-            age="2 meses"
-          />
+          {petsNearby.map((pet) => (
+            <PetCard
+              name={pet.name}
+              breed={pet.breed}
+              photo={pet.photo}
+              age={pet.age}
+            />
+          ))}
         </div>
       </div>
     </>
