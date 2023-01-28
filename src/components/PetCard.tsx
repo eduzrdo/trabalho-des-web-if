@@ -19,7 +19,7 @@ export const PetCard = ({ name, breed, photo, age }: PetCardProps) => {
         <div className="mt-3">
           <strong className="text-lg">{name}</strong>
           <div className="text-xs text-zinc-600 mt-1">
-            <span className="relative pr-2 mr-2 after:absolute after:content-['\2022'] after:right-[-5px]">
+            <span className="relative pr-2 mr-2 after:absolute after:content-['\2022'] after:right-[-2px]">
               {breed}
             </span>
             <span>{age}</span>
