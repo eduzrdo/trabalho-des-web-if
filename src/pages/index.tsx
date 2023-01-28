@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Cat, Dog, MagnifyingGlass, PawPrint, Syringe } from 'phosphor-react';
 
 import { PetCard } from '@/components/PetCard';
@@ -28,8 +29,8 @@ export default function Home() {
       </Head>
       <main className="flex flex-col min-h-screen">
         <nav className="flex justify-between items-center px-12 h-16 z-10">
-          <a
-            href="#"
+          <Link
+            href="/"
             className="flex items-center"
           >
             {/* <img src="" alt="Logo da Shabum" /> */}
@@ -39,7 +40,7 @@ export default function Home() {
               weight="fill"
             />
             <Cat className="text-xl" />
-          </a>
+          </Link>
 
           <ul className="flex gap-3">
             <li className="flex items-center gap-2">
