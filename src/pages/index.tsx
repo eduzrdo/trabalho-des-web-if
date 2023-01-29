@@ -8,6 +8,7 @@ import { Button } from '@/components/Button';
 import { GradientText } from '@/components/GradientText';
 
 import petsNearby from '../database/petsNearby.json';
+import { HowItWorks } from '@/components/HowItWorks';
 
 export default function Home() {
   return (
@@ -112,22 +113,22 @@ export default function Home() {
         </div>
       </main>
 
-      <div className="px-20">
-        <h2 className="text-3xl font-bold mt-16 mb-12 text-center">
+      <div className="px-20 bg-zinc-50 py-16">
+        <h2 className="text-3xl font-bold mb-12 text-center">
           Pets disponíveis para adoção por perto
         </h2>
 
         <ul className="flex gap-4 mx-auto w-fit">
-          <li className="px-4 py-2 cursor-pointer text-xs shadow-[0_0_0_1px_rgb(0,0,0,0.2)] rounded-lg">
+          <li className="px-4 py-2 cursor-pointer text-xs shadow-[0_0_0_1px_rgb(0,0,0,0.2)] rounded-lg hover:shadow-purple-500 transition-all duration-300">
             Cães
           </li>
           <li className="px-4 py-2 cursor-default bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 text-xs text-white rounded-lg">
             Gatos
           </li>
-          <li className="px-4 py-2 cursor-pointer text-xs shadow-[0_0_0_1px_rgb(0,0,0,0.2)] rounded-lg">
+          <li className="px-4 py-2 cursor-pointer text-xs shadow-[0_0_0_1px_rgb(0,0,0,0.2)] rounded-lg hover:shadow-purple-500 transition-all duration-300">
             Coelhos
           </li>
-          <li className="px-4 py-2 cursor-pointer text-xs shadow-[0_0_0_1px_rgb(0,0,0,0.2)] rounded-lg">
+          <li className="px-4 py-2 cursor-pointer text-xs shadow-[0_0_0_1px_rgb(0,0,0,0.2)] rounded-lg hover:shadow-purple-500 transition-all duration-300">
             Pássaros
           </li>
         </ul>
@@ -145,7 +146,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-20 mt-32">
+      <div className="px-20 py-16">
         <h2 className="text-3xl font-bold text-center">
           Sua jornada de <GradientText>adoção pet</GradientText> começa com a
           gente
@@ -153,28 +154,28 @@ export default function Home() {
 
         <div className="flex gap-8 mt-20">
           <div className="flex flex-1 flex-col justify-between">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 pr-16">
               <MagnifyingGlass
                 className="text-4xl text-pink-500"
                 weight="bold"
               />
               <div className="flex-1">
                 <h3 className="font-semibold">Busque</h3>
-                <p className="text-sm text-zinc-700 mt-2">
+                <p className="text-sm text-zinc-700 mt-4 leading-relaxed">
                   Adote o companheiro certo para você. Apenas informe sua cidade
                   para começar sua busca.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 pr-16">
               <Syringe
                 className="text-4xl text-purple-500"
                 weight="bold"
               />
               <div className="flex-1">
                 <h3 className="font-semibold">Consulta veterinária gratuita</h3>
-                <p className="text-sm text-zinc-700 mt-2">
+                <p className="text-sm text-zinc-700 mt-4 leading-relaxed">
                   Nós ajudamos seu pet se ajustar em seu novo lar, assim que
                   você concluir a jornada de adoção.
                 </p>
@@ -191,14 +192,14 @@ export default function Home() {
           </div>
 
           <div className="flex flex-1 flex-col justify-center">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 pl-16">
               <PawPrint
                 className="text-4xl text-indigo-500"
                 weight="bold"
               />
               <div className="flex-1">
                 <h3 className="font-semibold">Adote amor</h3>
-                <p className="text-sm text-zinc-700 mt-2">
+                <p className="text-sm text-zinc-700 mt-4 leading-relaxed">
                   Os pais de resgate dos animais de estimação irão orientá-lo no
                   processo de adoção, assim que você concluir a jornada de
                   adoção.
@@ -206,6 +207,33 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="px-20 bg-zinc-50 py-16">
+        <h2 className="text-3xl font-bold mb-12 text-center">Como funciona?</h2>
+
+        <div className="flex gap-8">
+          <HowItWorks
+            icon={<MagnifyingGlass className="text-3xl text-white" />}
+            title="Procure um pet"
+            description="Apenas informe sua cidade e comece sua busca."
+            color="bg-pink-500"
+          />
+
+          <HowItWorks
+            icon={<MagnifyingGlass className="text-3xl text-white" />}
+            title="Conheça"
+            description="Agende seu horário para conhecer o pet."
+            color="bg-purple-500"
+          />
+
+          <HowItWorks
+            icon={<MagnifyingGlass className="text-3xl text-white" />}
+            title="Adote"
+            description="Finalmente, adote seu novo bichinho."
+            color="bg-indigo-500"
+          />
         </div>
       </div>
     </>

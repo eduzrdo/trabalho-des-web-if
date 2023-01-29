@@ -1,4 +1,4 @@
-import { ArrowRight } from "phosphor-react";
+import { ArrowRight } from 'phosphor-react';
 
 interface PetCardProps {
   name: string;
@@ -9,7 +9,10 @@ interface PetCardProps {
 
 export const PetCard = ({ name, breed, photo, age }: PetCardProps) => {
   return (
-    <a href="" className="flex flex-col group">
+    <a
+      href=""
+      className="flex flex-col group"
+    >
       <img
         src={photo}
         alt={name}
