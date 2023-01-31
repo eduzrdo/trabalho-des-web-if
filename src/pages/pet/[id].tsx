@@ -1,7 +1,7 @@
 import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { ArrowLeft } from 'phosphor-react';
+import { ArrowLeft, XCircle, CheckCircle } from 'phosphor-react';
 
 import { Button } from '@/components/Button';
 import { Loading } from '@/components/Loading';
@@ -16,6 +16,8 @@ interface PetData {
   largePhoto: string;
   age: string;
   description: string;
+  vaccinated: boolean;
+  sterilized: boolean;
 }
 
 export default function Pet() {
@@ -26,12 +28,10 @@ export default function Pet() {
     const timeout = setTimeout(() => {
       const [data] = petsNearby.filter((pet) => pet.id === id);
       setPet(data);
-    }, 1500);
+    }, 1000);
 
     return () => clearTimeout(timeout);
   });
-
-  console.log(pet);
 
   return (
     <main className="flex h-screen">
@@ -64,6 +64,40 @@ export default function Pet() {
                 <Description>{pet.breed}</Description>
                 <Title>Idade</Title>
                 <Description>{pet.age}</Description>
+
+                <div className="text-xs p-4 rounded-lg bg-zinc-100 flex flex-col gap-2">
+                  <h3 className="font-semibold text-xs mb-1 text-zinc-800">
+                    Informações adicionais
+                  </h3>
+                  <span className="flex gap-1 items-center">
+                    Vacinado(a):{' '}
+                    {pet.vaccinated ? (
+                      <CheckCircle
+                        className="text-base text-green-600"
+                        weight="bold"
+                      />
+                    ) : (
+                      <XCircle
+                        className="text-base text-red-600"
+                        weight="bold"
+                      />
+                    )}
+                  </span>
+                  <span className="flex gap-1 items-center">
+                    Castrado(a):{' '}
+                    {pet.sterilized ? (
+                      <CheckCircle
+                        className="text-base text-green-600"
+                        weight="bold"
+                      />
+                    ) : (
+                      <XCircle
+                        className="text-base text-red-600"
+                        weight="bold"
+                      />
+                    )}
+                  </span>
+                </div>
               </div>
 
               <p className="flex-[2] leading-loose text-sm text-zinc-600">

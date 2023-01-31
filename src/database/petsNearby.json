@@ -6,7 +6,9 @@
     "photo": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
     "largePhoto": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
     "age": "1 ano e 5 meses",
-    "description": "Whisk é um gato de pelagem macia e sedosa com olhos verdes claros. Ele é conhecido por ser elegante e sofisticado, mas também é muito carinhoso e adora ficar no colo dos seus donos. Whisk é curioso e gosta de explorar, mas também é uma criatura caseira e adora passar horas dormindo no sol. Ele é um amante de comida e não resiste a uma boa refeição, especialmente se for algum tipo de carne. Whisk é um gato encantador e divertido que adora receber atenção e carinho."
+    "description": "Whisk é um gato de pelagem macia e sedosa com olhos verdes claros. Ele é conhecido por ser elegante e sofisticado, mas também é muito carinhoso e adora ficar no colo dos seus donos. Whisk é curioso e gosta de explorar, mas também é uma criatura caseira e adora passar horas dormindo no sol. Ele é um amante de comida e não resiste a uma boa refeição, especialmente se for algum tipo de carne. Whisk é um gato encantador e divertido que adora receber atenção e carinho.",
+    "vaccinated": true,
+    "sterilized": false
   },
   {
     "id": "3cfb8c59-64e9-4a77-bb91-0b3e4040a96b",
@@ -15,7 +17,9 @@
     "photo": "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
     "largePhoto": "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
     "age": "2 anos e 7 meses",
-    "description": "Simba é um gato malhado vibrante com olhos amarelos brilhantes. Ele é curioso, brincalhão e tem um temperamento amigável. Simba adora passear ao ar livre e brincar com brinquedos, especialmente com sua bola de lã preferida. Apesar de ser independente, ele também é afetuoso e gosta de passar tempo com sua família humana."
+    "description": "Simba é um gato malhado vibrante com olhos amarelos brilhantes. Ele é curioso, brincalhão e tem um temperamento amigável. Simba adora passear ao ar livre e brincar com brinquedos, especialmente com sua bola de lã preferida. Apesar de ser independente, ele também é afetuoso e gosta de passar tempo com sua família humana.",
+    "vaccinated": true,
+    "sterilized": true
   },
   {
     "id": "fb2909e8-c7d9-4975-a0c1-b1a30a6f39d2",
@@ -24,7 +28,9 @@
     "photo": "https://images.unsplash.com/photo-1491485880348-85d48a9e5312?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
     "largePhoto": "https://images.unsplash.com/photo-1491485880348-85d48a9e5312?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
     "age": "3 anos",
-    "description": "Felix é um belo exemplar da raça Maine Coon, com uma pelagem macia e longa de cor cinza. Com seus três anos de idade, ele já atingiu sua grande estatura e é conhecido por sua inteligência e personalidade forte. Felix é um gato independente, mas também adora interagir com sua família humana e é conhecido por ser muito carinhoso e brincalhão. Ele adora jogar com brinquedos, especialmente aqueles envolvendo caça, e é um gato de caça nato. Felix é um verdadeiro amigo leal que sempre está pronto para compartilhar uma soneca ou brincadeira."
+    "description": "Felix é um belo exemplar da raça Maine Coon, com uma pelagem macia e longa de cor cinza. Com seus três anos de idade, ele já atingiu sua grande estatura e é conhecido por sua inteligência e personalidade forte. Felix é um gato independente, mas também adora interagir com sua família humana e é conhecido por ser muito carinhoso e brincalhão. Ele adora jogar com brinquedos, especialmente aqueles envolvendo caça, e é um gato de caça nato. Felix é um verdadeiro amigo leal que sempre está pronto para compartilhar uma soneca ou brincadeira.",
+    "vaccinated": true,
+    "sterilized": false
   },
   {
     "id": "7b2a0e64-f1b9-4b57-8b70-f3ba3b3a3c23",
@@ -33,7 +39,9 @@
     "photo": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
     "largePhoto": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
     "age": "2 anos e 1 mês",
-    "description": "Luna é uma gata malhada vibrante com olhos amarelos brilhantes. Com apenas dois anos de idade, ela já é conhecida por sua personalidade animada e extrovertida. Luna é curiosa, brincalhona e sempre está animada para jogar e explorar. Ela é muito afetuosa e adora passar tempo com sua família humana, especialmente se isso envolve uma soneca no colo. Luna é uma gata cheia de vida que sempre faz seus donos rirem com suas traquinagens e brincadeiras."
+    "description": "Luna é uma gata malhada vibrante com olhos amarelos brilhantes. Com apenas dois anos de idade, ela já é conhecida por sua personalidade animada e extrovertida. Luna é curiosa, brincalhona e sempre está animada para jogar e explorar. Ela é muito afetuosa e adora passar tempo com sua família humana, especialmente se isso envolve uma soneca no colo. Luna é uma gata cheia de vida que sempre faz seus donos rirem com suas traquinagens e brincadeiras.",
+    "vaccinated": true,
+    "sterilized": true
   },
   {
     "id": "aed8b1d9-f9b7-46dd-9968-dcb8862d2f96",
@@ -42,7 +50,9 @@
     "photo": "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
     "largePhoto": "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
     "age": "1 ano",
-    "description": "Bella é uma gata Angorá encantadora com uma pelagem macia e brilhante de cor branca. Com apenas um ano de idade, ela já tem uma aparência adorável e um coração amoroso. Bella é curiosa e adora explorar, mas também é conhecida por ser muito carinhosa e adora ficar no colo dos seus donos. Ela é brincalhona e adora jogar com brinquedos, especialmente aqueles envolvendo fios. Bella é uma gata doce e meiga que sempre faz seus donos sorrirem com sua personalidade adorável."
+    "description": "Bella é uma gata Angorá encantadora com uma pelagem macia e brilhante de cor branca. Com apenas um ano de idade, ela já tem uma aparência adorável e um coração amoroso. Bella é curiosa e adora explorar, mas também é conhecida por ser muito carinhosa e adora ficar no colo dos seus donos. Ela é brincalhona e adora jogar com brinquedos, especialmente aqueles envolvendo fios. Bella é uma gata doce e meiga que sempre faz seus donos sorrirem com sua personalidade adorável.",
+    "vaccinated": true,
+    "sterilized": false
   },
   {
     "id": "17dd6ef5-6d54-4bc0-a0f8-26b67b1dcab0",
@@ -51,6 +61,8 @@
     "photo": "https://images.unsplash.com/photo-1591871937573-74dbba515c4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
     "largePhoto": "https://images.unsplash.com/photo-1591871937573-74dbba515c4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
     "age": "2 meses",
-    "description": "Tiger é um gatinho Napoleon adorável com uma pelagem macia e curta de cor branca e cinza. Com apenas 2 meses de idade, ele é um bebê curioso e brincalhão. Tiger é conhecido por sua inteligência e personalidade forte, mas também é carinhoso e adora ficar perto de sua família humana. Ele é muito ativo e adora brincar com brinquedos, especialmente aqueles que envolvem caçar. Tiger é um gato encantador e divertido que sempre faz seus donos sorrirem com suas traquinagens e brincadeiras."
+    "description": "Tiger é um gatinho Napoleon adorável com uma pelagem macia e curta de cor branca e cinza. Com apenas 2 meses de idade, ele é um bebê curioso e brincalhão. Tiger é conhecido por sua inteligência e personalidade forte, mas também é carinhoso e adora ficar perto de sua família humana. Ele é muito ativo e adora brincar com brinquedos, especialmente aqueles que envolvem caçar. Tiger é um gato encantador e divertido que sempre faz seus donos sorrirem com suas traquinagens e brincadeiras.",
+    "vaccinated": false,
+    "sterilized": false
   }
 ]
