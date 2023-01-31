@@ -73,7 +73,7 @@ export default function Pet() {
 
             <Button>
               Agendar visita com{' '}
-              <span className="font-semibold">{pet.name}</span>
+              <span className="font-semibold relative right-1">{pet.name}</span>
             </Button>
           </div>
         </>
