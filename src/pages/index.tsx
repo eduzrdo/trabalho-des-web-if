@@ -322,7 +322,7 @@ export default function Home() {
         </div>
       )}
 
-      <div className="px-20 bg-zinc-50 pb-4 flex justify-between items-center">
+      <div className="px-20 bg-zinc-50 py-4 flex justify-between items-center">
         <div className="flex flex-col gap-2">
           <Link
             href="/"

@@ -1,7 +1,13 @@
 import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { ArrowLeft, XCircle, CheckCircle } from 'phosphor-react';
+import {
+  ArrowLeft,
+  XCircle,
+  CheckCircle,
+  GenderMale,
+  GenderFemale,
+} from 'phosphor-react';
 
 import { Button } from '@/components/Button';
 import { Loading } from '@/components/Loading';
@@ -12,6 +18,7 @@ interface PetData {
   id: string;
   name: string;
   breed: string;
+  gender: 'male' | 'female';
   photo: string;
   largePhoto: string;
   age: string;
@@ -27,7 +34,10 @@ export default function Pet() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       const [data] = petsNearby.filter((pet) => pet.id === id);
-      setPet(data);
+      setPet({
+        ...data,
+        gender: data.gender === 'male' ? 'male' : 'female',
+      });
     }, 1000);
 
     return () => clearTimeout(timeout);
@@ -56,7 +66,7 @@ export default function Pet() {
           </div>
 
           <div className="flex-1 p-8 flex flex-col gap-8 justify-between">
-            <div className="flex gap-8">
+            <div className="flex items-start gap-8">
               <div className="flex flex-col gap-4 flex-1">
                 <div className="text-xs p-4 rounded-lg bg-zinc-100 flex flex-col gap-2 text-zinc-600">
                   <h3 className="font-semibold text-xs mb-1">
@@ -73,6 +83,18 @@ export default function Pet() {
                     <span className="text-zinc-800 font-semibold">
                       {pet.age}
                     </span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span>Sexo:</span>
+                    {pet.gender === 'male' ? (
+                      <span className="text-zinc-800 font-semibold flex items-center gap-1">
+                        Macho <Male />
+                      </span>
+                    ) : (
+                      <span className="text-zinc-800 font-semibold flex items-center gap-1">
+                        Fêmea <Female />
+                      </span>
+                    )}
                   </div>
                   <div className="flex flex-col">
                     <span>Raça:</span>
@@ -95,7 +117,7 @@ export default function Pet() {
                 </div>
               </div>
 
-              <p className="flex-[2] leading-loose text-sm text-zinc-600">
+              <p className="flex-[2] leading-loose text-sm text-zinc-600 p-4 rounded-lg bg-zinc-100">
                 {pet.description}
               </p>
             </div>
@@ -128,6 +150,24 @@ const X = () => {
   return (
     <XCircle
       className="text-base text-red-600"
+      weight="bold"
+    />
+  );
+};
+
+const Male = () => {
+  return (
+    <GenderMale
+      className="text-base text-purple-500"
+      weight="bold"
+    />
+  );
+};
+
+const Female = () => {
+  return (
+    <GenderFemale
+      className="text-base text-purple-500"
       weight="bold"
     />
   );
