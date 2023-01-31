@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
   Cat,
+  Confetti,
   Copyright,
   Dog,
   FacebookLogo,
@@ -20,8 +21,21 @@ import { GradientText } from '@/components/GradientText';
 
 import petsNearby from '../database/petsNearby.json';
 import { HowItWorks } from '@/components/HowItWorks';
+import { useState } from 'react';
 
 export default function Home() {
+  const [subscribedToNewsletter, setSubscribedToNewsletter] = useState(false);
+  const [email, setEmail] = useState('');
+
+  const subscribe = () => {
+    if (email === '') {
+      alert('Insira um e-mail para se cadastrar.');
+      return;
+    }
+
+    setSubscribedToNewsletter(true);
+  };
+
   return (
     <>
       <Head>
@@ -247,32 +261,54 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-20 py-16">
-        <h2 className="text-3xl font-bold text-center">
-          Receba nossa newsletter
-        </h2>
+      {subscribedToNewsletter ? (
+        <div className="px-20 py-16 max-w-[740px] mx-auto">
+          <div className="p-2 rounded-2xl bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500">
+            <div className="bg-white rounded-xl p-8">
+              <div className="flex gap-4 justify-center items-center text-2xl font-semibold">
+                <Confetti className="text-3xl text-pink-500" />
+                <GradientText>Parabéns!</GradientText>
+                <Confetti className="text-3xl text-indigo-500" />
+              </div>
 
-        <h3 className="font-bold mt-4 text-center">
-          Para se juntar à comunidade mundial
-        </h3>
-
-        <div className="w-fit mx-auto mt-12 p-1 overflow-hidden pb-24">
-          <div className="shadow-[0_32px_68px_-14px_rgba(68,85,247,0.5)] flex gap-4 p-4">
-            <div className="flex flex-col flex-1">
-              <span className="text-sm text-zinc-500">
-                Informe seu endereço de e-mail
-              </span>
-              <input
-                type="email"
-                placeholder="seuemail@mail.com"
-                className="px-4 py-2 outline-none flex-1 flex"
-              />
+              <h2 className="text-sm mt-4 text-center">
+                A partir de agora você estará atualizado com novos pets
+                disponíveis para adoção, dicas, e outras notícias em primeira
+                mão!
+              </h2>
             </div>
-
-            <Button>Enviar</Button>
           </div>
         </div>
-      </div>
+      ) : (
+        <div className="px-20 py-16">
+          <h2 className="text-3xl font-bold text-center">
+            Receba nossa newsletter
+          </h2>
+
+          <h3 className="font-bold mt-4 text-center">
+            Para se juntar à comunidade mundial
+          </h3>
+
+          <div className="w-fit mx-auto mt-12 p-1 overflow-hidden pb-24">
+            <div className="shadow-[0_32px_68px_-14px_rgba(68,85,247,0.5)] flex gap-4 p-4">
+              <div className="flex flex-col flex-1">
+                <span className="text-sm text-zinc-500">
+                  Informe seu endereço de e-mail
+                </span>
+                <input
+                  type="email"
+                  placeholder="seuemail@mail.com"
+                  className="px-4 py-2 outline-none flex-1 flex"
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
+                />
+              </div>
+
+              <Button onClick={subscribe}>Enviar</Button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="px-20 bg-zinc-50 pb-4 flex justify-between items-center">
         <div className="flex flex-col gap-2">
