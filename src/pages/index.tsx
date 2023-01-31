@@ -116,7 +116,7 @@ export default function Home() {
               >
                 <Button>
                   Quero adotar{' '}
-                  <Dog
+                  <PawPrint
                     className="text-lg"
                     weight="fill"
                   />
