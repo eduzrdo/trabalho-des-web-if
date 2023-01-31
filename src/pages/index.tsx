@@ -1,7 +1,18 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Cat, Dog, MagnifyingGlass, PawPrint, Syringe } from 'phosphor-react';
+import {
+  Cat,
+  Copyright,
+  Dog,
+  FacebookLogo,
+  Heart,
+  InstagramLogo,
+  MagnifyingGlass,
+  PawPrint,
+  Syringe,
+  TwitterLogo,
+} from 'phosphor-react';
 
 import { PetCard } from '@/components/PetCard';
 import { Button } from '@/components/Button';
@@ -201,8 +212,7 @@ export default function Home() {
                 <h3 className="font-semibold">Adote amor</h3>
                 <p className="text-sm text-zinc-700 mt-4 leading-relaxed">
                   Os pais de resgate dos animais de estimação irão orientá-lo no
-                  processo de adoção, assim que você concluir a jornada de
-                  adoção.
+                  processo durante a jornada de adoção.
                 </p>
               </div>
             </div>
@@ -222,18 +232,103 @@ export default function Home() {
           />
 
           <HowItWorks
-            icon={<MagnifyingGlass className="text-3xl text-white" />}
+            icon={<PawPrint className="text-3xl text-white" />}
             title="Conheça"
             description="Agende seu horário para conhecer o pet."
             color="bg-purple-500"
           />
 
           <HowItWorks
-            icon={<MagnifyingGlass className="text-3xl text-white" />}
+            icon={<Heart className="text-3xl text-white" />}
             title="Adote"
             description="Finalmente, adote seu novo bichinho."
             color="bg-indigo-500"
           />
+        </div>
+      </div>
+
+      <div className="px-20 py-16">
+        <h2 className="text-3xl font-bold text-center">
+          Receba nossa newsletter
+        </h2>
+
+        <h3 className="font-bold mt-4 text-center">
+          Para se juntar à comunidade mundial
+        </h3>
+
+        <div className="w-fit mx-auto mt-12 p-1 overflow-hidden pb-24">
+          <div className="shadow-[0_32px_68px_-14px_rgba(68,85,247,0.5)] flex gap-4 p-4">
+            <div className="flex flex-col flex-1">
+              <span className="text-sm text-zinc-500">
+                Informe seu endereço de e-mail
+              </span>
+              <input
+                type="email"
+                placeholder="seuemail@mail.com"
+                className="px-4 py-2 outline-none flex-1 flex"
+              />
+            </div>
+
+            <Button>Enviar</Button>
+          </div>
+        </div>
+      </div>
+
+      <div className="px-20 bg-zinc-50 pb-4 flex justify-between items-center">
+        <div className="flex flex-col gap-2">
+          <Link
+            href="/"
+            className="flex items-center"
+          >
+            {/* <img src="" alt="Logo da Shabum" /> */}
+            <h2 className="text mr-2 font-semibold">Família Pet</h2>
+            <Dog
+              className="text-xl mr-1"
+              weight="fill"
+            />
+            <Cat className="text-xl" />
+          </Link>
+
+          <div className="flex gap-4">
+            <a
+              href="#"
+              className="p-2 rounded-full border-2 border-purple-200 hover:border-purple-500 group hover:bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 hover:text-white"
+            >
+              <FacebookLogo
+                className="text-lg"
+                weight="bold"
+              />
+            </a>
+            <a
+              href="#"
+              className="p-2 rounded-full border-2 border-purple-200 hover:border-purple-500 group hover:bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 hover:text-white"
+            >
+              <TwitterLogo
+                className="text-lg"
+                weight="bold"
+              />
+            </a>
+            <a
+              href="#"
+              className="p-2 rounded-full border-2 border-purple-200 hover:border-purple-500 group hover:bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 hover:text-white"
+            >
+              <InstagramLogo
+                className="text-lg"
+                weight="bold"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p className="text-xs text-zinc-600 font-semibold justify items-center">
+            Copyright{' '}
+            <Copyright
+              className="text-base inline relative bottom-[2px]"
+              weight="bold"
+            />{' '}
+            2023. Família Pet. Todos os direitos reservados.
+          </p>
         </div>
       </div>
     </>
