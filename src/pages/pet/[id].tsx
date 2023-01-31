@@ -55,47 +55,42 @@ export default function Pet() {
             />
           </div>
 
-          <div className="flex-1 p-8 flex flex-col gap-4 justify-between">
-            <div className="flex gap-4">
-              <div className="flex-1">
-                <Title>Nome</Title>
-                <Description>{pet.name}</Description>
-                <Title>Raça</Title>
-                <Description>{pet.breed}</Description>
-                <Title>Idade</Title>
-                <Description>{pet.age}</Description>
+          <div className="flex-1 p-8 flex flex-col gap-8 justify-between">
+            <div className="flex gap-8">
+              <div className="flex flex-col gap-4 flex-1">
+                <div className="text-xs p-4 rounded-lg bg-zinc-100 flex flex-col gap-2 text-zinc-600">
+                  <h3 className="font-semibold text-xs mb-1">
+                    Informações básicas
+                  </h3>
+                  <div className="flex flex-col">
+                    <span>Nome:</span>
+                    <span className="text-zinc-800 font-semibold">
+                      {pet.name}
+                    </span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span>Idade:</span>
+                    <span className="text-zinc-800 font-semibold">
+                      {pet.age}
+                    </span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span>Raça:</span>
+                    <span className="text-zinc-800 font-semibold">
+                      {pet.breed}
+                    </span>
+                  </div>
+                </div>
 
-                <div className="text-xs p-4 rounded-lg bg-zinc-100 flex flex-col gap-2">
-                  <h3 className="font-semibold text-xs mb-1 text-zinc-800">
+                <div className="text-xs p-4 rounded-lg bg-zinc-100 flex flex-col gap-2 text-zinc-600">
+                  <h3 className="font-semibold text-xs mb-1">
                     Informações adicionais
                   </h3>
-                  <span className="flex gap-1 items-center">
-                    Vacinado(a):{' '}
-                    {pet.vaccinated ? (
-                      <CheckCircle
-                        className="text-base text-green-600"
-                        weight="bold"
-                      />
-                    ) : (
-                      <XCircle
-                        className="text-base text-red-600"
-                        weight="bold"
-                      />
-                    )}
+                  <span className="flex gap-1 items-center text-zinc-600">
+                    Vacinado(a): {pet.vaccinated ? <Check /> : <X />}
                   </span>
-                  <span className="flex gap-1 items-center">
-                    Castrado(a):{' '}
-                    {pet.sterilized ? (
-                      <CheckCircle
-                        className="text-base text-green-600"
-                        weight="bold"
-                      />
-                    ) : (
-                      <XCircle
-                        className="text-base text-red-600"
-                        weight="bold"
-                      />
-                    )}
+                  <span className="flex gap-1 items-center text-zinc-600">
+                    Castrado(a): {pet.sterilized ? <Check /> : <X />}
                   </span>
                 </div>
               </div>
@@ -120,10 +115,20 @@ export default function Pet() {
   );
 }
 
-const Title = ({ children }: { children: ReactNode }) => {
-  return <h2 className="text-sm font-semibold text-zinc-500">{children}</h2>;
+const Check = () => {
+  return (
+    <CheckCircle
+      className="text-base text-green-600"
+      weight="bold"
+    />
+  );
 };
 
-const Description = ({ children }: { children: ReactNode }) => {
-  return <p className="mb-4 text-zinc-900">{children}</p>;
+const X = () => {
+  return (
+    <XCircle
+      className="text-base text-red-600"
+      weight="bold"
+    />
+  );
 };
