@@ -1,16 +1,18 @@
+import Link from 'next/link';
 import { ArrowRight } from 'phosphor-react';
 
 interface PetCardProps {
+  id: string;
   name: string;
   breed: string;
   photo: string;
   age: string;
 }
 
-export const PetCard = ({ name, breed, photo, age }: PetCardProps) => {
+export const PetCard = ({ id, name, breed, photo, age }: PetCardProps) => {
   return (
-    <a
-      href=""
+    <Link
+      href={`/pet/${id}`}
       className="flex flex-col group"
     >
       <img
@@ -33,6 +35,6 @@ export const PetCard = ({ name, breed, photo, age }: PetCardProps) => {
           <ArrowRight className="text-lg" />
         </button>
       </footer>
-    </a>
+    </Link>
   );
 };

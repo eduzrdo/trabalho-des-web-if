@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -18,10 +19,9 @@ import {
 import { PetCard } from '@/components/PetCard';
 import { Button } from '@/components/Button';
 import { GradientText } from '@/components/GradientText';
+import { HowItWorks } from '@/components/HowItWorks';
 
 import petsNearby from '../database/petsNearby.json';
-import { HowItWorks } from '@/components/HowItWorks';
-import { useState } from 'react';
 
 export default function Home() {
   const [subscribedToNewsletter, setSubscribedToNewsletter] = useState(false);
@@ -68,33 +68,30 @@ export default function Home() {
             <Cat className="text-xl" />
           </Link>
 
-          <ul className="flex gap-3">
+          <ul className="flex gap-3 text-sm">
             <li className="flex items-center gap-2">
               <a
-                href=""
+                href="#petsNearby"
+                className="px-2 py-4"
+              >
+                Adote
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <a
+                href="#about"
                 className="px-2 py-4"
               >
                 Sobre
               </a>
-              {/* <i className="ph-heart text-xl"></i> */}
-            </li>
-            <li className="flex items-center gap-2">
-              <a
-                href=""
-                className="px-2 py-4"
-              >
-                Contato
-              </a>
-              {/* <i className="ph-headset text-xl"></i> */}
             </li>
             <li className="mr-[-0.5rem] flex items-center gap-2">
               <a
-                href=""
+                href="#howItWorks"
                 className="px-2 py-4"
               >
-                Nos encontre
+                Como funciona
               </a>
-              {/* <i className="ph-shopping-cart-simple text-xl"></i> */}
             </li>
           </ul>
         </nav>
@@ -113,13 +110,18 @@ export default function Home() {
             </p>
 
             <div className="flex gap-4 mt-8 w-full">
-              <Button>
-                Quero adotar{' '}
-                <Dog
-                  className="text-lg"
-                  weight="fill"
-                />
-              </Button>
+              <a
+                href="#petsNearby"
+                className="scroll-smooth"
+              >
+                <Button>
+                  Quero adotar{' '}
+                  <Dog
+                    className="text-lg"
+                    weight="fill"
+                  />
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -138,7 +140,10 @@ export default function Home() {
         </div>
       </main>
 
-      <div className="px-20 bg-zinc-50 py-16">
+      <div
+        className="px-20 bg-zinc-50 py-16"
+        id="petsNearby"
+      >
         <h2 className="text-3xl font-bold mb-12 text-center">
           Pets disponíveis para adoção por perto
         </h2>
@@ -162,6 +167,7 @@ export default function Home() {
           {petsNearby.map((pet) => (
             <PetCard
               key={pet.id}
+              id={pet.id}
               name={pet.name}
               breed={pet.breed}
               photo={pet.photo}
@@ -171,7 +177,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-20 py-16">
+      <div
+        className="px-20 py-16"
+        id="about"
+      >
         <h2 className="text-3xl font-bold text-center">
           Sua jornada de <GradientText>adoção pet</GradientText> começa com a
           gente
@@ -234,7 +243,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-20 bg-zinc-50 py-16">
+      <div
+        className="px-20 bg-zinc-50 py-16"
+        id="howItWorks"
+      >
         <h2 className="text-3xl font-bold mb-12 text-center">Como funciona?</h2>
 
         <div className="flex gap-8">
@@ -298,7 +310,7 @@ export default function Home() {
                 <input
                   type="email"
                   placeholder="seuemail@mail.com"
-                  className="px-4 py-2 outline-none flex-1 flex"
+                  className="px-4 py-2 outline-none flex-1 flex rounded-lg focus:bg-zinc-200 mt-2"
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
                 />
@@ -328,7 +340,7 @@ export default function Home() {
           <div className="flex gap-4">
             <a
               href="#"
-              className="p-2 rounded-full border-2 border-purple-200 hover:border-purple-500 group hover:bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 hover:text-white"
+              className="p-2 rounded-full border-2 border-purple-200 hover:border-purple-500 hover:bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 hover:text-white"
             >
               <FacebookLogo
                 className="text-lg"
@@ -337,7 +349,7 @@ export default function Home() {
             </a>
             <a
               href="#"
-              className="p-2 rounded-full border-2 border-purple-200 hover:border-purple-500 group hover:bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 hover:text-white"
+              className="p-2 rounded-full border-2 border-purple-200 hover:border-purple-500 hover:bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 hover:text-white"
             >
               <TwitterLogo
                 className="text-lg"
@@ -346,7 +358,7 @@ export default function Home() {
             </a>
             <a
               href="#"
-              className="p-2 rounded-full border-2 border-purple-200 hover:border-purple-500 group hover:bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 hover:text-white"
+              className="p-2 rounded-full border-2 border-purple-200 hover:border-purple-500 hover:bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 hover:text-white"
             >
               <InstagramLogo
                 className="text-lg"
