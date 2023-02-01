@@ -32,7 +32,10 @@ export const PetCard = ({ id, name, breed, photo, age }: PetCardProps) => {
         </div>
 
         <button className="p-2 rounded-full bg-zinc-200 text-[0px] group-hover:bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 group-hover:text-white">
-          <ArrowRight className="text-lg" />
+          <ArrowRight
+            className="text-lg"
+            weight="bold"
+          />
         </button>
       </footer>
     </Link>

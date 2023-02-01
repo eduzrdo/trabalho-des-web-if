@@ -21,12 +21,8 @@ export const HowItWorks = ({
 
   const shadow = `shadow-[0_16px_14px_${rgba[color]}]`;
 
-  console.log(shadow);
-
-  // shadow-[0_10px_10px_rgba(168,85,247,0.5)]
-
   return (
-    <div className={`flex flex-1 flex-col items-center px-20 text-center`}>
+    <div className={`flex flex-1 flex-col items-center md:px-12 text-center`}>
       <div className={`p-5 rounded-xl ${color} ${shadow}`}>{icon}</div>
       <h2 className="text-zinc-900 text-xl font-semibold mt-10">{title}</h2>
       <p className="text-sm mt-3">{description}</p>

@@ -50,10 +50,10 @@ export default function Pet() {
           <div className="flex-1 relative">
             <Link
               href="/"
-              className="p-3 border-2 border-white rounded-full bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 absolute left-4 top-4"
+              className="absolute left-4 top-4 p-2 rounded-full bg-zinc-200 text-[0px] hover:bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 hover:text-white border-2 border-purple-500 hover:border-zinc-50"
             >
               <ArrowLeft
-                className="text-xl text-white"
+                className="text-lg"
                 weight="bold"
               />
             </Link>

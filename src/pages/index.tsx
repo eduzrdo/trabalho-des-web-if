@@ -68,7 +68,7 @@ export default function Home() {
             <Cat className="text-xl" />
           </Link>
 
-          <ul className="flex gap-3 text-sm">
+          <ul className="gap-3 text-sm hidden sm:flex">
             <li className="flex items-center gap-2">
               <a
                 href="#petsNearby"
@@ -96,8 +96,8 @@ export default function Home() {
           </ul>
         </nav>
 
-        <div className="flex flex-1 px-12 gap-8">
-          <div className="flex flex-col flex-1 justify-center items-center">
+        <div className="flex flex-col md:flex-row flex-1 px-12 gap-8">
+          <div className="flex flex-col flex-1 justify-center items-center md:items-start text-center md:text-left">
             <h1 className="text-4xl font-bold">
               <GradientText>Transformando vidas</GradientText>, uma patinha de
               cada vez
@@ -109,7 +109,7 @@ export default function Home() {
               segunda chance de encontrar um lar amoroso e seguro.
             </p>
 
-            <div className="flex gap-4 mt-8 w-full">
+            <div className="flex gap-4 mt-8">
               <a
                 href="#petsNearby"
                 className="scroll-smooth"
@@ -125,30 +125,30 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-1 justify-center items-center relative">
+          <div className="hidden md:flex flex-1 justify-center items-center relative">
             <img
               src="https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
               alt=""
-              className="absolute w-[260px] aspect-[3/4] rounded-3xl object-cover left-1/2 top-1/2 translate-x-[-25%] translate-y-[-75%] shadow-xl"
+              className="absolute w-1/2 aspect-[3/4] rounded-3xl object-cover left-1/2 top-1/2 translate-x-[-25%] translate-y-[-75%] shadow-xl"
             />
             <img
               src="https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
               alt=""
-              className="absolute w-[260px] aspect-[3/4] rounded-3xl object-cover left-1/2 top-1/2 translate-x-[-75%] translate-y-[-25%] shadow-xl"
+              className="absolute w-1/2 h-1/2 aspect-[3/4] rounded-3xl object-cover left-1/2 top-1/2 translate-x-[-75%] translate-y-[-25%] shadow-xl"
             />
           </div>
         </div>
       </main>
 
       <div
-        className="px-20 bg-zinc-50 py-16"
+        className="px-5 md:px-20 bg-zinc-50 py-16"
         id="petsNearby"
       >
         <h2 className="text-3xl font-bold mb-12 text-center">
           Pets disponíveis para adoção por perto
         </h2>
 
-        <ul className="flex gap-4 mx-auto w-fit">
+        <ul className="flex w-fit gap-4 mx-auto">
           <li className="px-4 py-2 cursor-pointer text-xs shadow-[0_0_0_1px_rgb(0,0,0,0.2)] rounded-lg hover:shadow-purple-500 transition-all duration-300">
             Cães
           </li>
@@ -178,7 +178,7 @@ export default function Home() {
       </div>
 
       <div
-        className="px-20 py-16"
+        className="px-5 md:px-20 py-16"
         id="about"
       >
         <h2 className="text-3xl font-bold text-center">
@@ -186,9 +186,9 @@ export default function Home() {
           gente
         </h2>
 
-        <div className="flex gap-8 mt-20">
-          <div className="flex flex-1 flex-col justify-between">
-            <div className="flex items-center gap-4 pr-16">
+        <div className="flex gap-8 mt-20 flex-col lg:flex-row">
+          <div className="flex flex-1 flex-col gap-8 justify-between order-2 lg:order-none lg:pr-12">
+            <div className="flex items-center gap-4">
               <MagnifyingGlass
                 className="text-4xl text-pink-500"
                 weight="bold"
@@ -202,7 +202,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 pr-16">
+            <div className="flex items-center gap-4">
               <Syringe
                 className="text-4xl text-purple-500"
                 weight="bold"
@@ -217,16 +217,16 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          <div className="order-1 lg:order-none px-4 md:px-0">
             <img
               src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=362&q=80"
               alt="Dog with flower in its mouth"
-              className="aspect-square w-full object-cover rounded-full shadow-[0_0_0_24px_rgba(220,0,10,0.15)]"
+              className="aspect-square w-1/2 lg:w-full mx-auto object-cover rounded-full shadow-[0_0_0_24px_rgba(220,0,10,0.15)]"
             />
           </div>
 
-          <div className="flex flex-1 flex-col justify-center">
-            <div className="flex items-center gap-4 pl-16">
+          <div className="flex flex-1 flex-col justify-center order-3 lg:order-none">
+            <div className="flex items-center gap-4 lg:pl-12">
               <PawPrint
                 className="text-4xl text-indigo-500"
                 weight="bold"
@@ -244,12 +244,12 @@ export default function Home() {
       </div>
 
       <div
-        className="px-20 bg-zinc-50 py-16"
+        className="px-5 md:px-20 bg-zinc-50 py-16"
         id="howItWorks"
       >
         <h2 className="text-3xl font-bold mb-12 text-center">Como funciona?</h2>
 
-        <div className="flex gap-8">
+        <div className="flex gap-8 flex-col md:flex-row">
           <HowItWorks
             icon={<MagnifyingGlass className="text-3xl text-white" />}
             title="Procure um pet"
@@ -274,7 +274,7 @@ export default function Home() {
       </div>
 
       {subscribedToNewsletter ? (
-        <div className="px-20 py-16 max-w-[740px] mx-auto">
+        <div className="px-5 md:px-20 py-16 max-w-[740px] mx-auto min-h-[452px] relative top-8">
           <div className="p-2 rounded-2xl bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500">
             <div className="bg-white rounded-xl p-8">
               <div className="flex gap-4 justify-center items-center text-2xl font-semibold">
@@ -292,7 +292,7 @@ export default function Home() {
           </div>
         </div>
       ) : (
-        <div className="px-20 py-16">
+        <div className="px-5 md:px-20 py-16">
           <h2 className="text-3xl font-bold text-center">
             Receba nossa newsletter
           </h2>
@@ -302,15 +302,15 @@ export default function Home() {
           </h3>
 
           <div className="w-fit mx-auto mt-12 p-1 overflow-hidden pb-24">
-            <div className="shadow-[0_32px_68px_-14px_rgba(68,85,247,0.5)] flex gap-4 p-4">
+            <div className="shadow-[0_32px_68px_-14px_rgba(68,85,247,0.5)] flex flex-col md:flex-row gap-4 p-4">
               <div className="flex flex-col flex-1">
-                <span className="text-sm text-zinc-500">
+                <span className="text-sm text-zinc-500 text-center md:text-left">
                   Informe seu endereço de e-mail
                 </span>
                 <input
                   type="email"
                   placeholder="seuemail@mail.com"
-                  className="px-4 py-2 outline-none flex-1 flex rounded-lg focus:bg-zinc-200 mt-2"
+                  className="px-4 py-2 outline-none flex-1 flex rounded-lg focus:bg-zinc-200 mt-2 text-center md:text-left"
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
                 />
@@ -322,7 +322,7 @@ export default function Home() {
         </div>
       )}
 
-      <div className="px-20 bg-zinc-50 py-4 flex justify-between items-center">
+      <div className="px-5 md:px-20 bg-zinc-50 py-4 flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-center">
         <div className="flex flex-col gap-2">
           <Link
             href="/"
@@ -369,7 +369,7 @@ export default function Home() {
         </div>
 
         <div>
-          <p className="text-xs text-zinc-600 font-semibold justify items-center">
+          <p className="text-xs text-center md:text-left text-zinc-600 font-semibold justify items-center">
             Copyright{' '}
             <Copyright
               className="text-base inline relative bottom-[2px]"
