@@ -2,7 +2,7 @@
   {
     "id": "cb8c3a33-0400-4e7b-8145-7c7e84acbacf",
     "name": "Whisk",
-    "breed": "Frajola",
+    "breed": "SRD",
     "gender": "male",
     "photo": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
     "largePhoto": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
@@ -14,7 +14,7 @@
   {
     "id": "3cfb8c59-64e9-4a77-bb91-0b3e4040a96b",
     "name": "Simba",
-    "breed": "Malhado",
+    "breed": "SRD",
     "gender": "male",
     "photo": "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
     "largePhoto": "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
@@ -38,7 +38,7 @@
   {
     "id": "7b2a0e64-f1b9-4b57-8b70-f3ba3b3a3c23",
     "name": "Luna",
-    "breed": "Malhado",
+    "breed": "SRD",
     "gender": "female",
     "photo": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
     "largePhoto": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",

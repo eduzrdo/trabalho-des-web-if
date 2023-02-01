@@ -195,7 +195,7 @@ export default function Home() {
               />
               <div className="flex-1">
                 <h3 className="font-semibold">Busque</h3>
-                <p className="text-sm text-zinc-700 mt-4 leading-relaxed">
+                <p className="text-sm text-zinc-700 mt-2 md:mt-4 leading-relaxed">
                   Adote o companheiro certo para você. Apenas informe sua cidade
                   para começar sua busca.
                 </p>
@@ -209,7 +209,7 @@ export default function Home() {
               />
               <div className="flex-1">
                 <h3 className="font-semibold">Consulta veterinária gratuita</h3>
-                <p className="text-sm text-zinc-700 mt-4 leading-relaxed">
+                <p className="text-sm text-zinc-700 mt-2 md:mt-4 leading-relaxed">
                   Nós ajudamos seu pet se ajustar em seu novo lar, assim que
                   você concluir a jornada de adoção.
                 </p>
@@ -233,7 +233,7 @@ export default function Home() {
               />
               <div className="flex-1">
                 <h3 className="font-semibold">Adote amor</h3>
-                <p className="text-sm text-zinc-700 mt-4 leading-relaxed">
+                <p className="text-sm text-zinc-700 mt-2 md:mt-4 leading-relaxed">
                   Os pais de resgate dos animais de estimação irão orientá-lo no
                   processo durante a jornada de adoção.
                 </p>
@@ -301,7 +301,7 @@ export default function Home() {
             Para se juntar à comunidade mundial
           </h3>
 
-          <div className="w-fit mx-auto mt-12 p-1 overflow-hidden pb-24">
+          <div className="md:w-fit mx-auto mt-12 p-1 overflow-hidden pb-24">
             <div className="shadow-[0_32px_68px_-14px_rgba(68,85,247,0.5)] flex flex-col md:flex-row gap-4 p-4">
               <div className="flex flex-col flex-1">
                 <span className="text-sm text-zinc-500 text-center md:text-left">
