@@ -6,7 +6,13 @@ export default function Document() {
       lang="pt-br"
       className="scroll-smooth"
     >
-      <Head />
+      <Head>
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          href="/favicon.svg"
+        />
+      </Head>
       <body className="text-zinc-800 bg-zinc-white">
         <Main />
         <NextScript />

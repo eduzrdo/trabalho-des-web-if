@@ -48,10 +48,6 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
-        <link
-          rel="icon"
-          href="/favicon.ico"
-        />
       </Head>
       <main className="flex flex-col min-h-screen">
         <nav className="flex justify-between items-center px-12 h-16 z-10">
