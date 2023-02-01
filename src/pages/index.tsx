@@ -125,7 +125,7 @@ export default function Home() {
             <img
               src="https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
               alt=""
-              className="absolute w-1/2 aspect-[3/4] rounded-3xl object-cover left-1/2 top-1/2 translate-x-[-25%] translate-y-[-75%] shadow-xl"
+              className="absolute w-1/2 h-1/2 aspect-[3/4] rounded-3xl object-cover left-1/2 top-1/2 translate-x-[-25%] translate-y-[-75%] shadow-xl"
             />
             <img
               src="https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
