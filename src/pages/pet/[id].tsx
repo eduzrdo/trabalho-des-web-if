@@ -190,8 +190,8 @@ export default function Pet() {
             <p className="text-lg text-center font-semibold">
               <GradientText>Tudo certo!</GradientText>
             </p>
-            <p className="mt-2 mb-4 text-zinc-600 leading-relaxed text-center">
-              Seu agendamento para conhecer {pet.name} foi recebido com sucesso.
+            <p className="mt-2 mb-4 text-zinc-600 leading-relaxed text-center text-sm">
+              Sua solicitação para conhecer {pet.name} foi recebido com sucesso.
               Aguarde nosso retorno para combinarmos o horário de sua visita.
               Qualquer dúvida, entre em contato conosco.
             </p>
